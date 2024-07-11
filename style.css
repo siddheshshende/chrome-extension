@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+ 
+    cursor: pointer;
+}
+/*scrollbar */
+::-webkit-scrollbar {
+    width: 1em;
+  }
+  ::-webkit-scrollbar-track {
+    /* background: hsl(120, 39%, 54% );*/
+    margin-block: 0.5rem;
+    border-radius: 2rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient( #FF00FF, #BA55D3, #9370DB, #8A2BE2, #9400D3, #9932CC, #8B008B, #800080);
+   /* background: linear-gradient(limegreen, silver, black);*/
+    /* border: 0.25rem solid hsl(120, 39%, 54% );*/
+    border-radius: 2rem;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#800080, #8B008B,#9932CC,#9400D3,#8A2BE2,#9370DB,#BA55D3, #FF00FF);
+  }
+  /* for other browsers with scrollbar support */
+@supports (scrollbar-color: linear-gradient( #FF00FF, #BA55D3, #9370DB, #8A2BE2, #9400D3, #9932CC, #8B008B, #800080)) {
+    * {
+      scrollbar-color: linear-gradient( #FF00FF, #BA55D3, #9370DB, #8A2BE2, #9400D3, #9932CC, #8B008B, #800080) white;
+    }
+  }
+
+.extension {
+    border: 2px solid green;
+    border-radius: 2rem;
+    align-items: flex-start;
+    /*display: flex;*/
+  overflow: auto;
+  /*resize: both;*/
+  margin: 1rem;
+  padding: 2rem;
+  width: 400px;
+}
+
+/* Style for match scores */
+.match-score {
+    font-weight: bold;
+    color: rgb(182, 22, 22);
+}
+
+/* Style for match status */
+.match-status {
+    color: blue;
+    font-style: italic;
+}
+
+
+
+.title {
+    font-weight: bold;
+    background: linear-gradient(to right, #FF00FF, #BA55D3, #9370DB, #8A2BE2, #9400D3, #9932CC, #8B008B, #800080);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+  /* align-self: center; */
+}
+.title::before {
+  content: "🏏 ";
+}
+
+.ntitle{
+  font-weight: bold;
+  background: linear-gradient(to right, #FF00FF, #BA55D3, #9370DB, #8A2BE2, #9400D3, #9932CC, #8B008B, #800080);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+/* align-self: center; */
+}
+.ntitle::before {
+  content: "📰 ";
+}
+
